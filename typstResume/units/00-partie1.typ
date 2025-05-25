@@ -1,2 +1,5 @@
 = Protocoles de proximité
-#lorem(500)
+```kotlin
+TODO
+:3
+```

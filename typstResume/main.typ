@@ -16,4 +16,6 @@
   numbered-units: false,
 )
 
-#include "units/00-contenu.typ"
+#include "units/00-partie1.typ"
+#include "units/01-partie2.typ"
+#include "units/02-partie3.typ"
