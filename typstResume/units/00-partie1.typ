@@ -56,7 +56,7 @@ Codes 1D avec leurs jeux de caractères :
 == Lecture d'un code-barres 1D
 Historiquement : *faisceau laser*, analyse lumière réfléchie. Efficace pour 1D. *Faible densité d'info* (identifiants) ; applications récentes demandent plus.
 
-#figure(image("..\images\Screenshot 2025-05-25 133043.png", width: 80%))
+#figure(image("../images/Screenshot 2025-05-25 133043.png", width: 80%))
 
 
 == Différents types de codes-barres bidimensionnels (2D)
