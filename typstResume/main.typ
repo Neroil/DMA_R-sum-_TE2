@@ -16,6 +16,13 @@
   numbered-units: false,
 )
 
+// Les trois parties
 #include "units/00-partie1.typ"
 #include "units/01-partie2.typ"
 #include "units/02-partie3.typ"
+
+// Les exercices
+#include "units/exercices/00-ex-codes-barres.typ"
+#include "units/exercices/01-ex-NFC.typ"
+
+// Les labos
