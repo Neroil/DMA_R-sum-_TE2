@@ -193,7 +193,7 @@ Modes : *connecté* (clair, aka périphérique publie ses services et tt le mond
 GATT : Services > Characteristics (avec propriétés : Read, Notify) > Descriptors.
 
 == Le Bluetooth Low Energy (BLE) - Exemple (Current Time Characteristic)
-`Characteristic Current Time` (10B) : Année, Mois, Jour, Heure, Min, Sec, Jour sem, Fractions256, Raison ajust.
+`Characteristic Current Time` (10B) : [b0,b1 UInt16 LE] Année, [b2, UInt8] Mois, [b3, UInt8] Jour, [b4, UInt8] Heure, [b5, UInt8] Min, [b6, UInt8] Sec, [b7, UInt8] Jour sem, [b8, UInt8] Fractions256, [b9, UInt8] Raison ajust.
 
 == Le Bluetooth Low Energy (BLE) - Evolutions
 - *5.0 (2016) :* Débit `2M PHY` / portée `Coded PHY` augmentés, *réseaux maillés*.
@@ -202,15 +202,8 @@ GATT : Services > Characteristics (avec propriétés : Read, Notify) > Descripto
 - *5.3 (2021) :* Optimisations.
 - *5.4 (2023) :* Chiffrement annonces.
 
-= Autres
+= Autres que BLE
 
 - *Wi-Fi direct :* Connexions p2p Wi-Fi pour gros échanges de données.
 - *Google Nearby :* Librairie Android pour *com. p2p avancée* (BT, Wi-Fi, audio/ultrasons).
 - *AirDrop :* Apple (MacOS, iOS, ipadOS) partage fichiers (BT, Wi-Fi).
-
----
-
-= Les capteurs et les wearables
-
-== Les Capteurs
-Smartphones : nombreux capteurs. Ex (façade) : *Dot Projector, Caméra 7MP, Micro, Haut-parleur, Capteur lumière ambiante, Illuminateur Flood, Capteur proximité, Caméra IR*.
