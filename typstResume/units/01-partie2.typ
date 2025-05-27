@@ -126,7 +126,7 @@ On a plusieur approche de développement : *Notifications*, *Complications*, *Tu
 
 On pourra choisir la surface suivant la priorité des fonctionnalités/informations auxquelles on donne accès.
 
-#image("../images/WearOS-meteo.png")
+#image("../images/wearOS-meteo.png")
 
 Le *développement est similaire que pour Android* : Activités, ViewModels, Librairies Jetpack, etc.
 
