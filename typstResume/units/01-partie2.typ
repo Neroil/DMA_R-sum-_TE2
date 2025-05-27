@@ -18,7 +18,7 @@ Comme _LocationManager_ on accède aux capteurs par le _SensorManager_, exemple 
 val sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
 val accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 // inscription au capteur
-// ici listener est un SensorEventListener
+// ici listener est un SensorEventListener, on peut utiliser "this" si on est dans une activité p.ex.
 sensorManager.registerListener(listener, accelerometer, SensorManager.SENSOR_DELAY_NORMAL)
 // […]
 // désinscription

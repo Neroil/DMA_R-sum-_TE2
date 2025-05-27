@@ -24,5 +24,6 @@
 // Les exercices
 #include "units/exercices/00-ex-codes-barres.typ"
 #include "units/exercices/01-ex-NFC.typ"
+#include "units/exercices/02-ex-capteurs.typ"
 
 // Les labos
