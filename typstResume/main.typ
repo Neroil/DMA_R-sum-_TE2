@@ -11,7 +11,7 @@
   line-skip: 7pt,
   x-margin: 15pt,
   y-margin: 15pt,
-  num-columns: 5,
+  num-columns: 4,
   column-gutter: 4pt,
   numbered-units: false,
 )
@@ -25,5 +25,7 @@
 #include "units/exercices/00-ex-codes-barres.typ"
 #include "units/exercices/01-ex-NFC.typ"
 #include "units/exercices/02-ex-capteurs.typ"
+#include "units/exercices/03-ex-wearable.typ"
+#include "units/exercices/04-ex-NTK.typ"
 
 // Les labos

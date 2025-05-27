@@ -116,7 +116,7 @@ Offre des fonctions avancées car natives mais plus restraintes qu'une app norma
 - Apperçu de jeux mobile
 
 = Cross-platefrormes
-== Porquoi?
+== Pourquoi?
 Outils différents entre Android et iOS, philosophie différente, besoin de deux équipes de développement, etc.
 
 Pour répondre à ce besoins, différente approches ont émergées, allant de la simple webview à des solutions plus complexes. Les prmières solutions était proches des technologies web afin de permettre aux dev. web de facilement les utiliser, mais les dernières solutions sont plus proches des applications natives afin d'avoir accès à plus de fonctionnalités spécifiques des mobiles.
@@ -141,8 +141,8 @@ Application contenant une vm executant le code de l'application, avec un moteur 
 #figure(image("../images/vm.png"))
 
 Il existe principalement trois solutions:
-- React Native, Google, Dart, Liscence BSD
-- Flutter, Meta (Facebook), JavaScript, License MIT
+- *Flutter*, Google, Dart, Liscence BSD
+- *React Native*, Meta (Facebook), JavaScript, License MIT
 - .NET MAUI (successeur de Xamarin), Microsoft, C\#, License MIT
 Les moteurs de jeux comme unity permettent également des applications cross-plateforme.
 
@@ -155,7 +155,7 @@ La VM est stockée sous forme de librairies partagées (fichiers .so), ce qui a 
 Comme le code JS est interprété, il est possible de mettre à jour l'application sans passer par le store, mais il est interdit d'ajouter des fonctionnalités ou de changer significativement l'app.
 
 === Flutter
-Initialement déveoppé pour les mobiles, aujourd'hui il permet également le développment pour d'autres plateformes comme Linux, MacOS, Windows, Fuchsia ou le web. Principaux composants:
+Initialement développé pour les mobiles, aujourd'hui il permet également le développment pour d'autres plateformes comme Linux, MacOS, Windows, Fuchsia ou le web. Principaux composants:
 - Dart: langage à la Java, compilation just-in-time (JIT) pour le développement et sur Desktop, et compilation ahead-of-time (AOT) pour la production.
 
 - Foundation Library: Ensemble d'API pour construire app

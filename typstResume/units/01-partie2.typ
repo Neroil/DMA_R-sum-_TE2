@@ -16,7 +16,8 @@ Capteurs mouvements attention aux système d'axe, pour natel : x, y sur l'écran
 Comme _LocationManager_ on accède aux capteurs par le _SensorManager_, exemple inscription à accéléromètre :
 ```kt
 val sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
-val accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
+val accelerometer = sensorManager.getDefaultSensor(
+  Sensor.TYPE_ACCELEROMETER)
 // inscription au capteur
 // ici listener est un SensorEventListener, on peut utiliser "this" si on est dans une activité p.ex.
 sensorManager.registerListener(listener, accelerometer, SensorManager.SENSOR_DELAY_NORMAL)
@@ -93,7 +94,7 @@ On peut reconnaître des activités humaines grâce aux capteur (si fitness, tra
 
 1 seul capteur ne suffira pas en général pour déterminer avec précision l'activité.
 
-On doit avoir la *permission* `ACTIVITY_RECOGNITION` depuis Android 10 (2019) pour le podomètre et autres librairies. Mais l'accès aux données brutes est toujours possible.
+On doit avoir la *permission* `ACTIVITY_RECOGNITION` depuis Android 10 (2019) pour le podomètre et autres librairies. Mais l'accès aux données brutes  (< 200 Hz) est toujours possible.
 
 Utilisation détournée = écoute de discussions grâce à l'accél à partir des vibrations provoquée par le micro, détérminer appui de touche du clavier à partir de rotation, etc.
 
@@ -114,6 +115,8 @@ Ils sont très peu interopérable (application propriétaire). Dans le domaine m
 
 Pour le médical, depuis 2021 on a la législation suisse *ODim* pour préciser et renforcer les procédures nécessaire à la mise sur le marché d'une application de ce type.
 
+- Exemple ODim : une application mobile accompagnant une aide auditive et permettant de régler son volume sonore est considérée comme une app médicale.
+
 Les montres connéctées sont la catégorie la plus répendue de wearable (Android Wear, Apple Watch).
 
 === Wear OS (anciennement Android Wear)
@@ -132,7 +135,7 @@ Le *développement est similaire que pour Android* : Activités, ViewModels, Lib
 
 Attention toutefois à la réalisation de l'interface graphique qui est primordial (défilement vertical à privilégier).
 
-Pour synchroniser les données entre une application montre et natel -> _Wearable Data Layer API_.
+Pour synchroniser les données entre une application montre et natel -> _Wearable Data Layer API_ qui fait parties des *Google Play Services*.
 
 Cet API permet :
 - *_Message Client_ d'envoyer des messages* = appel RPC avec payload limités.
